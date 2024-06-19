@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>25 + 5 Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="clock-app">
+        <h1>25 + 5 Clock</h1>
+        <section class="lengths">
+          <section>
+            <p id="break-label">Break Length</p>
+            <section class="session-controls">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-up arrows"
+                viewBox="0 0 16 16"
+                id="break-increment"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+                />
+              </svg>
+              <p id="break-length">5</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-down arrows"
+                viewBox="0 0 16 16"
+                id="break-decrement"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                />
+              </svg>
+            </section>
+          </section>
+          <section>
+            <p id="session-label">Session Length</p>
+            <section class="session-controls">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-up arrows"
+                viewBox="0 0 16 16"
+                id="session-increment"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+                />
+              </svg>
+              <p id="session-length">25</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-down arrows"
+                viewBox="0 0 16 16"
+                id="session-decrement"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"
+                />
+              </svg>
+            </section>
+          </section>
+        </section>
+        <div class="clock-full">
+          <section class="clock">
+            <p id="timer-label">Session</p>
+            <h1 id="time-left">25:00</h1>
+          </section>
+          <section class="controls">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-pause-circle"
+              viewBox="0 0 16 16"
+              id="start_stop"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-play-circle"
+              viewBox="0 0 16 16"
+              id="play"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-arrow-clockwise"
+              viewBox="0 0 16 16"
+              id="reset"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+              />
+              <path
+                d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+              />
+            </svg>
+          </section>
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

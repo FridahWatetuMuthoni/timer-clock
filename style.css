@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  line-height: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-app {
+  width: 400px;
+  height: 330px;
+  border-radius: 10px;
+  background-color: purple;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.lengths {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.session-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#session-label,
+#break-label {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.clock-full {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  padding: 10px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .clock-app {
+    width: 98%;
+  }
+}
